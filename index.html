@@ -8,9 +8,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body>
-    <div class="container-img">
-        <h1>W&L(OM& T0 J@V@$CR1PT</h1>
+    <div class="main">
+      <div class="login-block">
+        <div class="title">Benvenuti/e</div>
+        <div class="subtitle">Accedi per giocare</div>
+        <form action="submit">
+          <input  name="mail" type="mail" class="input-custom" placeholder="Email">
+          <input  name="password" type="password" class="input-custom" placeholder="Password">
+        </form>
+        <div class="button-custom" onclick="checkLogin()">
+          Login
+        </div>
+      </div>
+
+      <div class="main-wrap hide" >
+        <div class="game-block">
+          <div class="title">
+            Benvenuti/e
+          </div>
+          <div class="text subtitle">
+            Inzia il gioco
+          </div>
+          <div class="button-container">
+            <div class="button-custom">
+              start
+            </div>
+          </div>
+        </div>
+      </div>
+    
     </div>
-<script src="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
