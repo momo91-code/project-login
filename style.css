@@ -1,0 +1,17 @@
+.container-img{
+background-image:url(immagini/B.Tech-CSE.webp);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+margin-top: 105px;
+height: 500px;
+}
+
+.container-img h1{
+text-align: center;
+font-weight: bold;
+color:rgb(10, 10, 10);
+border-bottom: 5px solid rgb(6, 6, 6);
+align-items: center;
+padding-top:210px;
+}
