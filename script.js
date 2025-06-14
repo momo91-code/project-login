@@ -25,8 +25,8 @@ function checkLogin(){
     console.log('entra');
     const loginBlock = document.getElementsByClassName('login-block')[0];
     const wrapBlock = document.getElementsByClassName('main-wrap')[0];
-    loginBlock.classList.add('hide');
-    wrapBlock.classList.remove('hide');
+    loginBlock.classList.add('hidden');
+    wrapBlock.classList.remove('hidden');
     sessionStorage.setItem('loginDone',true);
   }else{
     alert('Hai sbagliato qualcosa,ritenta')
@@ -37,8 +37,8 @@ function checkLogin(){
 function alreadyLogged(){
   const loginBlock = document.getElementsByClassName('login-block')[0];
   const wrapBlock = document.getElementsByClassName('main-wrap')[0];
-  loginBlock.classList.add('hide');
-  wrapBlock.classList.remove('hide');
+  loginBlock.classList.add('hidden');
+  wrapBlock.classList.remove('hidden');
 }
 
 function iniziaIlGioco(){

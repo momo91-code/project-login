@@ -38,7 +38,6 @@
   cursor:default;
 }
 
-
 .subtitle{
   font-size: 14px;
   font-weight: 500;
@@ -49,7 +48,6 @@
   font-weight: bold;
   cursor:default;
 }
-
 
 .input-custom{
   width: 100%;
@@ -120,10 +118,6 @@
 
 }
 
-.hide{
-  display: none;
-}
-
 .personaggio{
   display: flex;
   align-items: center;
@@ -156,7 +150,6 @@
   font-weight: bold;
   cursor:default;
 }
-
 
 .female{
  font-size: 20px;
