@@ -10,8 +10,8 @@
 <body>
     <div class="main">
       <div class="login-block">
-        <div class="title">Benvenuti/e</div>
-        <div class="subtitle">Accedi per giocare</div>
+        <div class="title">WELCOME</div>
+        <div class="subtitle">ACCEDI PER GIOCARE</div>
         <form action="submit">
           <input  name="mail" type="mail" class="input-custom" placeholder="Email">
           <input  name="password" type="password" class="input-custom" placeholder="Password">
@@ -20,24 +20,31 @@
           Login
         </div>
       </div>
-
       <div class="main-wrap hide" >
         <div class="game-block">
           <div class="title">
-            Benvenuti/e
+            SUPER WILD!
           </div>
-          <div class="text subtitle">
+          <div class="text subtitle" onclick="iniziaIlGioco()">
             Inzia il gioco
           </div>
-          <div class="button-container">
-            <div class="button-custom">
-              start
-            </div>
+        </div>
+      </div>  
+      <div class="button-container">
+        <div class="button-personaggio" onclick="choicePersonaggio()">
+          start
+        </div>
+      </div>
+      <div class="personaggio hidden">
+        <div class="scelta-personaggio">
+          <div class="male">
+            Operatore
+          </div>
+          <div class="female">
+            Operatrice
           </div>
         </div>
       </div>
-    
-    </div>
 
     <script src="script.js"></script>
 </body>

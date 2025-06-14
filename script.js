@@ -40,3 +40,8 @@ function alreadyLogged(){
   loginBlock.classList.add('hide');
   wrapBlock.classList.remove('hide');
 }
+
+function iniziaIlGioco(){
+  const wrapBlock = document.getElementsByClassName('main-wrap')[0];
+}
+
