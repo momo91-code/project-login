@@ -30,21 +30,30 @@
           </div>
         </div>
       </div>  
-      <div class="button-container hidden">
-        <div class="button-personaggio" onclick="choicePersonaggio()">
-          start
-        </div>
-      </div>
-      <div class="personaggio hidden">
-        <div class="scelta-personaggio">
-          <div class="male">
-            Operatore
+      <div class="main-wrap step1 hidden" >
+        <div class="game-block">
+          <div class="title">
+            Scegli il tuo personaggio!
           </div>
-          <div class="female">
-            Operatrice
+          <div class="options-container">
+            <div class="operatore" onclick="chosePlayer(1)">OPERATORE</div>
+            <div class="operatore" onclick="chosePlayer(2)">OPERATRICE</div>
           </div>
         </div>
-      </div>
+      </div>  
+      <div class="main-wrap step2 hidden" id="game-block">
+        <div class="game-block">
+          <div class="title" id="game-title">
+          </div>
+          <div class="text subtitle" id="game-subtitle">
+          </div>
+          <div class="buttons-container">
+            <div class="chose1" id="game-chose1" onclick="buttonChose(1)"></div>
+            <div class="chose2" id="game-chose2" onclick="buttonChose(2)"></div>
+          </div>
+        </div>
+      </div>  
+     
 
     <script src="script.js"></script>
 </body>
