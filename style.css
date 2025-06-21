@@ -4,15 +4,19 @@
   box-sizing: border-box;
 }
 
+
+/* schermata di login*/
+
 .main{
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-image:url(immagini/Programacion-funcional-en-JavaScript.jpg); 
+  background-image:url(immagini/ghost1.avif); 
   background-size: cover;
   width:100%;
 }
+
 
 .login-block{
   display: flex;
@@ -21,43 +25,47 @@
   width: 400px;
   height: fit-content;
   padding: 32px;
-  background-color: #fff;
-  border: 8px solid #060606;
+  background-color: transparent;
+  border: 8px solid white;
   border-radius: 16px;
   gap: 12px;
 }
 
+/* titolo e sottotitolo  schermata login*/
 .title{
   font-size: 20px;
   font-weight: 700;
   text-align: center;
-  color:rgb(235, 39, 212);
-  font-family: "Rochester", cursive;
+  color:white;
+  font-family: "rochester", cursive;
   font-style: normal;
-  font-weight: bold;
   cursor:default;
+  letter-spacing: 3px;
 }
 
 .subtitle{
   font-size: 14px;
   font-weight: 500;
   text-align: center;
-  color:rgb(107, 228, 246);
+  color:white;
   font-family: "Rochester", cursive;
   font-style: normal;
-  font-weight: bold;
   cursor:default;
+  letter-spacing: 3px;
 }
+
+/* caratteristiche bottoni per mail e password*/
 
 .input-custom{
   width: 100%;
   margin: 4px;
   font-family: "Rochester", cursive;
   font-style: normal;
+  letter-spacing: 3px;
 }
 
 .input-custom:hover{
- background-color: rgba(230, 183, 253, 0.781); 
+ background-color:  rgba(247, 91, 7, 0.781); 
 }
 
 .button-custom{
@@ -73,24 +81,28 @@
   padding: 0px 12px;
   font-family: "Rochester", cursive;
   font-style: normal;
+  color:#fff;
 }
 
 .button-custom:hover{
   background-color: rgba(247, 91, 7, 0.781);
   transform: scale(1.04);
+  color:white;
 }
+
+/* container di inizio gioco*/
 .main-wrap{
   display: flex;
   align-items: center;
   justify-content: center;
   height:100vh;
   width:100%;
-  background-image:url(immagini/fb.jpg);
+  background-image:url(immagini/ghost2.jpg);
   background-size:cover;
 }
+
 .game-block{
   display: flex;
-  flex-direction: column;
   align-items: center;
   width: 400px;
   height: fit-content;
@@ -99,6 +111,46 @@
   border: 8px solid #0d0e0e;
   border-radius: 16px;
   gap: 12px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+/* titolo e sottotitolo inizio gioco*/
+.title{
+  font-family: "Rochester", cursive;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  font-weight: 700;
+  color:#0d0e0e;
+  cursor:pointer;
+} 
+
+.text-subtitle{
+  font-family: "Rochester", cursive;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color:#0d0e0e;
+  font-weight: 400px;
+  cursor:pointer;
+}
+.text-subtitle:hover{
+   transform: scale(2);
+}
+
+
+/* container scelta personaggi*/
+
+.step1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:100vh;
+  background-image:url(immagini/second.img);
+  background-size:auto; 
+  background-repeat: no-repeat;
 }
 
 .title{
@@ -107,57 +159,123 @@
   font-weight: bold;
   font-size: 20px;
   font-weight: 700;
-}   
+  color:#0d0e0e;
+} 
 
-.text-subtitle{
-  font-family: "Rochester", cursive;
+.operatore{
+  font-family: "rochester", cursive;
   font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  font-weight: 500;
-
+  font-weight: 700;
+  font-size: 20px;
+  color:#0d0e0e;
+  cursor:pointer;
+  padding:4px;
+  letter-spacing: 3px;
 }
 
-.personaggio{
+/* container prima scelta miltipla*/
+
+.step2{
   display: flex;
   align-items: center;
   justify-content: center;
+  height:100vh;
   width: 100%;
-  height: 100vh;
-  background-image:url(immagini/fb.jpg);
-  background-size: cover;
+  background-size:cover; 
+  background-repeat: no-repeat;
+  background-image:url(immagini/stanza.jpg);
 }
+
+.title1{
+  font-family: "Rochester", cursive;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  font-weight: 700;
+  color:black;
+  letter-spacing: 3px;
+  cursor:default
+} 
+
+.text-subtitle1{
+  font-family: "Rochester", cursive;
+  font-style: normal;
+  font-size: 25px;
+  color:black;
+  font-weight: 400px;
+  letter-spacing: 3px;
+  cursor:default;
+}
+
+.buttons-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 800;
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  padding: 0px 12px;
+  font-family: "Rochester", cursive;
+  font-style: normal;
+  color:black;
+  font-size: 25px;
+}
+
+/*container seconda scelta multipla*/
+.step2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:100vh;
+  width: 100%;
+  background-size:cover; 
+  background-repeat: no-repeat;
+  background-image:url(immagini/corridoio2.jpg);
+}
+
+/*container terza scelta*/
+.step3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:fit-content;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-image:url(immagini/corridoio.png);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .hidden{
   display: none;
-}
-.scelta-personaggio{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background-image:url(immagini/wp9019618.webp);
-  background-size: cover;
-}
-
-.male{
- font-size: 20px;
-  font-weight: 700;
-  text-align: center;
-  color:rgb(235, 39, 212);
-  font-family: "Rochester", cursive;
-  font-style: normal;
-  font-weight: bold;
-  cursor:default;
-}
-
-.female{
- font-size: 20px;
-  font-weight: 700;
-  text-align: center;
-  color:rgb(235, 39, 212);
-  font-family: "Rochester", cursive;
-  font-style: normal;
-  font-weight: bold;
-  cursor:default;
 }

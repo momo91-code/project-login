@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript</title> 
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Jim+Nightshade&family=Rochester&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="main">
@@ -20,17 +21,19 @@
           Login
         </div>
       </div>
-      <div class="main-wrap hidden" >
+      <!--schermata di inizio gioco-->
+      <div class="main-wrap hidden">
         <div class="game-block">
           <div class="title">
-            SUPER WILD!
+            SUPER SCARY!
           </div>
-          <div class="text subtitle" onclick="iniziaIlGioco()">
-            Inzia il gioco
+          <div class="text-subtitle" onclick="iniziaIlGioco()">
+            gioca ora
           </div>
         </div>
-      </div>  
-      <div class="main-wrap step1 hidden" >
+      </div> 
+      <!--schermata scelta personaggio--> 
+      <div class="main-wrap step1 hidden" id="game-block">
         <div class="game-block">
           <div class="title">
             Scegli il tuo personaggio!
@@ -40,19 +43,46 @@
             <div class="operatore" onclick="chosePlayer(2)">OPERATRICE</div>
           </div>
         </div>
-      </div>  
-      <div class="main-wrap step2 hidden" id="game-block">
+      </div> 
+      <!--schermata prima scelta multipla--> 
+      <div class="main-wrap2 step2 hidden" id="game-block1">
         <div class="game-block">
-          <div class="title" id="game-title">
+          <div class="title1" id="game-title"> <!-- modifica-->
           </div>
-          <div class="text subtitle" id="game-subtitle">
+          <div class="text-subtitle1" id="game-subtitle">
           </div>
           <div class="buttons-container">
-            <div class="chose1" id="game-chose1" onclick="buttonChose(1)"></div>
-            <div class="chose2" id="game-chose2" onclick="buttonChose(2)"></div>
+            <div class="chose1" id="game-chose1" onclick="buttonChoice(1)"></div>
+            <div class="chose2" id="game-chose2" onclick="buttonChoice(2)"></div>
           </div>
         </div>
-      </div>  
+      </div>
+      <!--schermata seconda scelta multipla-->
+      <div class="main-wrap3 step3 hidden" id="game-block2"></div>"
+         <div class="game-block1">
+          <div class="title" id="game-title1">
+          </div>
+          <div class="text subtitle" id="game-subtitle1">
+          </div>
+          <div class="buttons-container1">
+            <div class="chose3" id="game-choice3" onclick="buttonChoice(3)"></div>
+            <div class="chose4" id="game-choice4" onclick="buttonChoice(4)"></div>
+          </div>
+        </div>
+      </div> 
+      <!--schermata terza scelta multipla-->
+       <div class="main-wrap4 step4 hidden" id="game-block3"></div>"
+         <div class="game-block2">
+          <div class="title" id="game-title2">
+          </div>
+          <div class="text subtitle" id="game-subtitle2">
+          </div>
+          <div class="buttons-container2">
+            <div class="chose3" id="game-chose5" onclick="Choice(5)"></div>
+            <div class="chose4" id="game-chose6" onclick="Choice(6)"></div>
+          </div>
+        </div>
+      </div> 
      
 
     <script src="script.js"></script>
